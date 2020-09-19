@@ -41,17 +41,17 @@ int main() //Marks the beginning of a function. Every C++ program must have a ma
 	cout << weight << "lbs on ";
 
 	//determine weight on planets
-	if (planet == 'M')
+	if (planet == 'M' || planet == 'm')   //|| means or, so this is saying that that people can input m or M to represent the planet
 	{
 		newWeight = weight * MERCURY;
 		cout << "Mercury = " << newWeight << " lbs." << endl;
 	}
-	else if (planet == 'V')
+	else if (planet == 'V' || planet == 'v')
 	{
 		newWeight = weight * VENUS;
 		cout << "Venus = " << newWeight << " lbs." << endl;
 	}
-	else if (planet == 'N')
+	else if (planet == 'N' || planet =='n')
 	{
 		newWeight = weight * NEPTUNE;
 		cout << "Neptune = " << newWeight << "lbs." << endl;
