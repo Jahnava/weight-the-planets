@@ -56,6 +56,11 @@ int main() //Marks the beginning of a function. Every C++ program must have a ma
 		newWeight = weight * NEPTUNE;
 		cout << "Neptune = " << newWeight << "lbs." << endl;
 	}
+	else 
+	{
+		cout << "error - cannot be calculated due to invalid input " << endl; //if a person enters a letter that is not programmed into this statement, then they will get this message
+
+	}
 
 	cout << endl << endl;
 	system("pause");
