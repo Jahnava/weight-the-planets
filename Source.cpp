@@ -21,7 +21,7 @@ int main() //Marks the beginning of a function. Every C++ program must have a ma
 	float weight;   //input value from the user
 	float newWeight;  //calculated value
 
-	char planet; //users choice of the planet. charachters or char's only hold one value that is placed in single quotes
+	char planet; //users choice of the planet. charachters or char's only hold one value that is placed in single quotes NOT double quotes
 
 	//get input from the user
 	cout << "Enter your weight in lbs: ";
@@ -38,7 +38,26 @@ int main() //Marks the beginning of a function. Every C++ program must have a ma
 
 	//output
 	cout << fixed << setprecision(1) << endl << endl;
-	cout << weight << "pounds on ";
+	cout << weight << "lbs on ";
 
 	//determine weight on planets
+	if (planet == 'M')
+	{
+		newWeight = weight * MERCURY;
+		cout << "Mercury = " << newWeight << " lbs." << endl;
+	}
+	else if (planet == 'V')
+	{
+		newWeight = weight * VENUS;
+		cout << "Venus = " << newWeight << " lbs." << endl;
+	}
+	else if (planet == 'N')
+	{
+		newWeight = weight * NEPTUNE;
+		cout << "Neptune = " << newWeight << "lbs." << endl;
+	}
+
+	cout << endl << endl;
+	system("pause");
+	return 0;
 }
